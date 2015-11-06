@@ -1,0 +1,87 @@
+body
+{
+    overflow-x:hidden;
+}
+.homeDiv input, .homeDiv select{ 
+	height:30px; 
+	font-size: 15px;
+}
+
+.homeDiv {
+    width: 90%;
+    margin-left: 5%;
+    margin-right:5%;
+}
+    .homeDiv h1 {
+        text-align: center;
+        color: #1b97f4;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        padding-bottom:15px;
+        margin:30px 15px 0px 15px;
+        border-bottom:1px solid #1b97f4;
+    }
+
+    .homeDiv p {
+        margin-left: 15px;
+        text-indent: 2em;
+    }
+    .homeDiv table{
+        border:1px solid #B6B6B6;
+        border-radius:2px;
+        font-size:15px;
+        text-align:center;
+        
+        margin-right:5%;
+        margin-left:5%;
+        width:90%;
+        border-spacing:0;
+    }
+    .homeDiv table td{
+        border:1px solid #B6B6B6;
+    }
+
+    .homeDiv{
+        color: #151515;
+        font-size: 20px;
+        font-family: sans-serif;
+        text-align: left;
+        line-height: 30px;
+        border-radius: 15px;
+        background-color:rgba(10,10,10,0.1);
+        border: 2px solid rgb(255,255,255);
+        margin-bottom:20px;
+    }
+
+    
+
+
+td._lable {  font-size: 15px; font-weight: bold;}
+
+#_tab_header { width:760px;}
+#_tab_header td {
+    border-bottom: solid 1px skyblue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color:#1b97f4;
+}
+
+#_tab_base { width: 760px; }
+#_tab_base td._lable { width:85px; text-align:right;}
+#_tab_base td._info { width:190px;}
+#_tab_base input { width:100%; }
+#_tab_base img#_info_image { width: 180px;height: 235px;}
+
+#_tab_birth { width:755px;}
+#_tab_birth td._lable {width:90px;text-align:left;}
+#_tab_birth td._info { width:470px; }
+#_tab_birth input { width:100%;}
+#_tab_birth select._cander{ width:100%; align-content:space-around;}
+
+#_tab_dead { width:755px;}
+#_tab_dead td._lable{ width: 90px; text-align: left;}
+#_tab_dead td._info {width: 470px;}
+#_tab_dead input { width: 100%;}
+#_tab_dead select._cander{ width:100%; align-content:space-around;}

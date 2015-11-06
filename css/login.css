@@ -1,0 +1,148 @@
+
+html {
+    background: #563c55 url("img/bg/login/1600_900.jpg") no-repeat top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.form {
+    /* Size and position */
+    width: 400px;
+    margin: 90px auto 30px;
+    position: relative;
+
+    /* Styles */
+    border-radius: 5px;
+    
+    /*box-shadow: 0 0 5px rgba(255,255,255,0.1), 0 3px 2px rgba(0,0,0,0.1);*/
+}
+
+.form p.input{
+    width: 80%;
+    float: left;
+    margin-top:10px;
+    /*border-radius: 10px 0 0 10px;*/
+    /*border: 1px solid #fff;*/
+    /*border-right: none;*/
+}
+.form p#message{
+    width:100%;
+    float:left;
+    color:#a57b5c;
+    font-family:'Montserrat',sans-serif;
+    font-size:15px;
+}
+
+
+.form input[type=text],
+.form input[type=password] {
+    /* Size and position */
+    width: 90%;
+    height: 50px;
+    padding: 0 10px;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    /*background: red;*/ 
+    background: rgba(165,123,92,0.7);
+    box-shadow: 
+        inset 0 0 10px rgba(255,255,255,0.5);
+
+    /* Font styles */
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    text-indent: 10px;
+    /*color: #ee4c8d;*/
+    color:#ffffff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 20px;     
+    
+    border: 1px solid #fff;  
+}
+
+.form input[type=text] {
+    border-bottom: 1px solid #fff; /* Fallback */
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-radius: 10px 10px 0 0;
+}
+
+.form input[type=password] {
+    margin-top:3px;
+    border-top: 1px solid #CCC; /* Fallback */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+.form input[type=text]:hover,
+.form input[type=password]:hover,
+.form input[type=text]:focus,
+.form input[type=password]:focus {
+    /*background: #f7def7;*/ /* Fallback */
+    /*background: rgba(255,255,255,0.4);*/
+    background:rgba(165,123,92,0.8);
+    outline: none;
+    border:1px solid #a57b5c;
+}
+
+/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
+
+.form input:-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+    font-size:40px;
+    font-style:italic;
+}
+
+.form input:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form input:-ms-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form button {
+    /* Size and position */
+    width: 38%;
+    height: 40px;
+    float: left;
+    overflow: hidden;
+
+    /* Styles */
+    background:#a57b5c;
+    border-radius: 10px 0 10px 0;
+    border: none;
+    /*line-height: 38px;*/ /* Same as height */
+}
+
+.form button[name=submit]{
+    border-radius:10px 0 0 10px;
+}
+
+.form button[name=register]{
+    margin-left:3px;
+    border-radius:0 10px 10px 0;
+}
+
+.form button span {
+    display: block;
+
+    /* Font styles */ 
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', Arial, sans-serif; 
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+}
+
+/* Focus and hover on button */
+.form button:hover,focus{
+    border:1px solid #e5b184;
+    outline:none;
+    cursor:pointer;
+}

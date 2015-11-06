@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{text-align:left;color:#444;font-size:14px;font-family:"microsoft yahei";}
+		img{border:0}
+		*{margin:0;padding:0}
+		ul{list-style:none}
+		.header_l img{height:65px;margin-top:10px}
+		select,input,img,select{vertical-align:middle}
+		a{text-decoration:none;cursor:pointer;color:#000;font-weight:normal;}
+		a:hover{color:#0f91ed}
+
+		.rides-cs { 
+			top: 200px;
+			right: 0px;
+			position: fixed; 
+			height: 300px;
+			font-size: 12px; 
+			background:#29a7e2; 
+			z-index: 150; 
+			border-radius:25px 0px 0 25px;
+		}
+		.rides-cs a { color: #00A0E9;}
+		.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+
+		.rides-cs .floatL { 
+			width: 40px; 
+			float:left; 
+			position: relative; 
+			z-index:1;
+			margin-top: 50px; 
+			margin-left: 5px; 
+			height: 200px;
+		}
+		.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+
+		.rides-cs .floatR { 
+			width: 100px; 
+			float: left; 
+			overflow:hidden; 
+			display: block;
+		}
+
+		.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:14px; margin-right: 5px;}
+		.rides-cs .cn .titZx{font-weight:600; line-height:30px;text-align:center;}
+		.rides-cs .cn ul {padding:0px;}
+		.rides-cs .cn ul li { line-height: 38px; height:60px;border-top: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+		.rides-cs .cn ul li span { color: #777;}
+		.rides-cs .cn ul li a{color: #777;}
+		.rides-cs .cn ul li img { vertical-align: middle; margin-top: 6px;}
+		.rides-cs #btnOpen {  position: relative; top:20px; left: 0;  background-image: url(../img/contact/contect2.png);  background-repeat: no-repeat; display:block;  height: 160px;}
+		.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+	</style>
+	
+</head>
+
+<body>
+	<div id="floatTools" class="rides-cs">
+		<div class="floatL">
+			<a id="btnOpen" onclick="onShowFloatBox()"></a>
+		</div>
+		<div id="divFloatToolsView" class="floatR">
+			<div class="cn">
+				<h3 class="titZx">赖少发</h3>
+				<ul>
+					<li><!--<span>Email</span>-->
+				    	<a id="aMail" onclick="onShowLayer(0)">
+				    		<img src="../img/contact/message_48px.png" title="留言"/>
+				    	</a>
+				    </li>
+				    <li><!--<span>QQ</span>-->
+					    <a id="aQQ" onclick="onShowLayer(1)">
+					    	<img src="../img/contact/qq_48px.png" title="发送QQ消息" />
+					    </a>
+				    </li>
+				    <li><!--<span>Wechat</span>-->
+					    <a id="aWeChat" onclick="onShowLayer(2)">
+					    	<img src="../img/contact/wechat_48px.png" title="发送微信"/>
+					    </a>
+					</li>
+				    <li><!--<span>Phone</span>-->
+				    	<a id="aPhone" onclick="onShowLayer(3)">
+				    		<img src="../img/contact/phone_48px.png" title="打电话"/>
+				    	</a>
+				    </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

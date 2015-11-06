@@ -1,0 +1,130 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset=utf-8 />
+	<title>留言</title>
+
+	<style type="text/css">
+		body{ 
+			margin:0;
+			padding: 0;
+		}
+		.message {
+		    width: 99.6%;
+		    height: 99.5%;
+		    padding: 0;
+		    margin: 0;
+		    color: #151515;
+	        font-size: 20px;
+	        font-family: sans-serif;
+	        border-radius: 15px;
+	        background-color:rgba(10,10,10,0.1);
+	        border: 1px solid rgb(255,255,255);
+	        margin-bottom:0px;
+		}
+
+	    .message h1 {
+	        text-align: center;
+	        color: #1b97f4;
+	        font-family: sans-serif;
+	        font-weight: bold;
+	        font-size: 35px;
+	        padding-bottom:15px;
+	        margin:30px 15px 0px 15px;
+	        border-bottom:1px solid #1b97f4;
+	    }
+
+	    .message p {
+	        margin-left: 15px;
+	        text-indent: 2em;
+	    }
+
+	    .message h1 {
+	        margin-bottom:20px;
+	    }
+
+        .message h1 > span {
+            display: block;
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .message label > span {
+            font-size: 20px;
+            float: left;
+            width: 12%;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .message input[type="text"], .message input[type="email"], .message textarea{
+            border-radius: 5px;
+            color: #1b97f4;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            height:40px;
+            width: 75%;
+            font-size: 20px;
+            text-indent:10px;
+            background-color:rgba(255, 255, 255, 0.6);
+            border:none;
+        }
+
+        .message textarea {
+            height: 100px;
+            line-height: 30px;
+            text-indent:0px;
+        }
+
+        .message input[type="button"] {
+            background: #E27575;
+            border: none;
+            width:80%;
+            color: #FFF;
+            box-shadow: 1px 1px 5px #B6B6B6;
+            border-radius: 3px;
+            text-shadow: 1px 1px 1px #9E3F3F;
+            cursor: pointer;
+            margin-left:13.5%;
+            margin-bottom:10px;
+            margin-right:6px;
+        }
+
+        .message .button:hover {
+            background: #CF7A7A;
+        }
+    }
+	</style>
+	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../../js/layer/layer.js"></script>
+	<script type="text/javascript" src="../../js/contact.js"></script>
+</head>
+
+<body>
+	<div class="message">
+
+        <h1>
+            给我留言
+            <span>为了保证信息的真实性，请真实完整地填写所有条目，谢谢!</span>
+        </h1>      
+	<label>
+            <span>姓名 :</span>
+            <input id="name" type="text" name="name" placeholder="真实姓名(必填)" />
+        </label>
+        <label>
+            <span>邮件 :</span>
+            <input id="email" type="email" name="email" placeholder="电子邮件地址(可不填)" />
+        </label>
+        <label>
+            <span>留言 :</span>
+            <textarea id="message" name="message" placeholder="给我的留言"></textarea>
+        </label>
+        <label>
+            <input type="button" name="submessage" value="提交" onclick="onClickSubMsg()"/>
+        </label>
+    </div>
+</body>
+</html>
